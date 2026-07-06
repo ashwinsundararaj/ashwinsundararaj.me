@@ -1,0 +1,326 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ashwin S | AI &amp; Data Science Professional</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#07497d",
+                    "on-surface-variant": "#42474f",
+                    "surface-tint": "#2d6197",
+                    "surface-container": "#e8eeff",
+                    "surface-variant": "#dde2f3",
+                    "primary": "#00355f",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#d5e0f7",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#41474e",
+                    "on-background": "#161c27",
+                    "secondary": "#545f72",
+                    "primary-fixed-dim": "#a0c9ff",
+                    "tertiary": "#2e343a",
+                    "secondary-fixed-dim": "#bcc7dd",
+                    "on-secondary-container": "#586377",
+                    "outline": "#727780",
+                    "on-primary-fixed": "#001c37",
+                    "surface": "#f9f9ff",
+                    "surface-dim": "#d4daea",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#dde2f3",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "tertiary-fixed-dim": "#c1c7cf",
+                    "surface-container-high": "#e3e8f9",
+                    "on-secondary-fixed": "#111c2c",
+                    "primary-container": "#0f4c81",
+                    "secondary-fixed": "#d8e3fa",
+                    "inverse-primary": "#a0c9ff",
+                    "surface-container-low": "#f1f3ff",
+                    "tertiary-container": "#444b51",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#161c27",
+                    "on-tertiary-container": "#b4bbc2",
+                    "inverse-on-surface": "#ecf0ff",
+                    "inverse-surface": "#2a303d",
+                    "primary-fixed": "#d2e4ff",
+                    "background": "#f9f9ff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#dde3eb",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#8ebdf9",
+                    "outline-variant": "#c2c7d1",
+                    "on-tertiary-fixed": "#161c22",
+                    "surface-bright": "#f9f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "stack-md": "16px",
+                    "section-padding": "80px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "label-code": ["JetBrains Mono"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-code": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "fontWeight": "800"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">Ashwin Sundararaj</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold transition-colors duration-200" href="#home">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#fields">Skills</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#experience">Projects</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-medium hover:opacity-90 active:scale-95 transition-all cursor-pointer">
+                    Get in Touch
+                </button>
+</div>
+<!-- Mobile Menu Toggle (simplified for demo) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="min-h-[90vh] flex items-center px-gutter max-w-container-max mx-auto py-stack-lg reveal active" id="home">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
+<!-- Text Content -->
+<div class="md:col-span-7 space-y-stack-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-code text-label-code uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        Available for Projects
+                    </div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight">
+                        AI &amp; Data Science <span class="text-primary-container">Professional</span>
+</h1>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl">Full Stack Developer | AI &amp; Data Science Student | Digital Marketing Professional</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-body-lg text-body-lg hover:shadow-lg transition-all active:scale-95 flex items-center gap-2">
+                            View Portfolio
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-outline text-primary px-8 py-4 rounded-lg font-body-lg text-body-lg hover:bg-surface-container transition-all">
+                            Download CV
+                        </button>
+</div>
+</div>
+<!-- Profile Photo -->
+<div class="md:col-span-5 relative"><div class="relative mx-auto max-w-sm group">
+    <!-- Decorative Background Card -->
+    <div class="absolute inset-0 border-2 border-primary/20 rounded-2xl translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+    
+    <!-- Main Image Container -->
+    <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border-2 border-surface-container-lowest shadow-xl bg-surface-container z-10">
+        <img alt="Ashwin S" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHhICefVTJvSFmabNMk_a_Jyu4GkSR9t2MiNgmCtXp7b6ezLCItR4M2JmUAtGi_cnD6GaEADhJ9R111kOjPt0jkyrk-D4tDhTiK92qP3jNL6_a01eA_cF1jUDwO7ILfoRSlgQS_Xf5Zi67-wrsZL9T38Fnm-C800ooNpf3-pFlXP2ieaKd6Af9O7v8xW01WGsSKUVeP-bLCDMQz5kRXasvhD5us1Nt5d3KXmmCEdeyVbNebNVZjZExVS1mez7Ny7uZ-_7svY9tQpA">
+    </div>
+
+    <!-- Floating Badge/Accent -->
+    <div class="absolute -bottom-4 -right-4 bg-primary text-on-primary p-3 rounded-xl shadow-lg z-20 flex items-center justify-center">
+        <span class="material-symbols-outlined">verified</span>
+    </div>
+
+    <!-- Decorative Elements (Refined) -->
+    <div class="absolute -top-6 -right-6 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl"></div>
+    <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary-container/20 rounded-full blur-2xl"></div>
+</div></div>
+</div>
+</section>
+<!-- Stats/Social Proof (Subtle Strip) -->
+
+<!-- Fields of Excellence (Bento Grid) -->
+<section class="py-section-padding px-gutter max-w-container-max mx-auto reveal active" id="fields">
+<div class="mb-stack-lg text-center md:text-left">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Fields of Excellence</h2>
+<p class="text-on-surface-variant max-w-xl">Multi-disciplinary expertise tailored for modern digital ecosystems.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Skill Card: AI & Data Science -->
+<div class="md:col-span-2 glass-card p-stack-lg rounded-xl border-l-4 border-l-primary flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary p-2 bg-primary-fixed rounded-lg">analytics</span>
+<h3 class="font-headline-sm text-headline-sm">AI &amp; Data Science</h3>
+</div>
+<p class="text-on-surface-variant text-body-lg mb-6">Expert in machine learning, statistical modeling, and predictive analytics. Transforming complex raw data into actionable business intelligence through custom neural networks and advanced algorithms.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-code text-xs rounded border border-outline-variant">Python</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-code text-xs rounded border border-outline-variant">TensorFlow</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-code text-xs rounded border border-outline-variant">PyTorch</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-code text-xs rounded border border-outline-variant">SQL</span>
+</div>
+</div>
+</div>
+<!-- Digital Marketing -->
+<div class="glass-card p-stack-lg rounded-xl border-l-4 border-l-[#10B981] hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[#10B981] p-2 bg-green-50 rounded-lg">trending_up</span>
+<h3 class="font-headline-sm text-headline-sm">Digital Marketing</h3>
+</div>
+<p class="text-on-surface-variant mb-6">Strategic growth marketing focused on ROI and data-driven performance metrics.</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> SEO/SEM Strategy</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Analytics Tracking</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Conversion Optimization</li>
+</ul>
+</div>
+<!-- WordPress -->
+<div class="glass-card p-stack-lg rounded-xl border-l-4 border-l-[#38BDF8] hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-[#38BDF8] p-2 bg-sky-50 rounded-lg">web</span>
+<h3 class="font-headline-sm text-headline-sm">WordPress &amp; Web</h3>
+</div>
+<p class="text-on-surface-variant mb-4">Developing secure, scalable, and high-performance CMS solutions for enterprise needs.</p>
+<div class="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
+                        Learn More <span class="material-symbols-outlined text-sm">open_in_new</span>
+</div>
+</div>
+<!-- Enterprise Solutions -->
+<div class="md:col-span-2 glass-card p-stack-lg rounded-xl border-l-4 border-l-secondary hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary p-2 bg-secondary-fixed rounded-lg">business_center</span>
+<h3 class="font-headline-sm text-headline-sm">Enterprise Ecosystems</h3>
+</div>
+<p class="text-on-surface-variant">Comprehensive implementation of ERP systems and Office 365 migrations. Ensuring seamless integration of business processes and cloud collaboration tools.</p>
+</div>
+
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary text-on-primary py-section-padding px-gutter overflow-hidden relative reveal active" id="contact">
+<!-- Background Decorative Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#ffffff 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+<div class="max-w-container-max mx-auto text-center relative z-10">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md mb-stack-md">Ready to Innovate?</h2>
+<p class="text-on-primary-container font-body-lg text-body-lg max-w-2xl mx-auto mb-stack-lg">
+                    Whether you're looking for sophisticated AI modeling or robust digital marketing strategies, let's build something exceptional together.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<a class="bg-surface text-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-surface-container transition-colors inline-flex items-center justify-center gap-2" href="mailto:contact@ashwins.com">
+<span class="material-symbols-outlined">mail</span>
+                        Start a Conversation
+                    </a>
+<a class="border-2 border-on-primary/30 text-on-primary px-10 py-5 rounded-lg font-bold text-lg hover:bg-on-primary/10 transition-colors inline-flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+                        Book a Strategy Session
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant py-stack-lg">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Ashwin Sundararaj</div>
+<p class="text-on-surface-variant font-body-md">© 2024 Ashwin Sundararaj. Full Stack Developer | AI &amp; Data Science Student | Digital Marketing Professional.</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-4">
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-1 underline decoration-2 underline-offset-4" href="#">
+                        LinkedIn
+                    </a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-1 underline decoration-2 underline-offset-4" href="#">
+                        GitHub
+                    </a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-1 underline decoration-2 underline-offset-4" href="#">
+                        Twitter
+                    </a>
+</div>
+<div class="text-xs font-label-code text-on-tertiary-fixed-variant tracking-widest uppercase">
+                    Excellence In Execution
+                </div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('reveal');
+            observer.observe(section);
+        });
+
+        // Initialize immediately for first view
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#home').classList.add('active');
+        });
+    </script>
+
+
+</body></html>
